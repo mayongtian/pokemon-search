@@ -1,0 +1,211 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "calibri";
+}
+body{
+    background: lightgreen;
+}
+fieldset{
+    display: flex;
+    width: 1090px;
+    margin: 10px 10px 10px 10px;
+    text-align: center;
+}
+/*these are the different kinds of wrappers */
+.wrapper{
+    margin: 10px 10px 15px 10px;
+    width: 180px;
+}
+.lv-wrapper{
+    margin: 10px 10px 15px 10px;
+    width: 120px;
+}
+.inp-wrapper{
+    margin: 10px 10px 15px 10px;
+    width: 350px;
+}
+
+/*this all is for the pokemon select bar...*/
+
+.select-btn{
+    height: 40px;
+    font-size: 17px;
+    display: flex;
+    cursor: pointer;
+    padding: 0 10px;
+    border-radius: 7px;
+    background: whitesmoke;
+    justify-content: space-between;
+}
+.select-btn, .options li{
+    display: flex;
+    cursor: pointer;
+    align-items: center;
+}
+.select-btn i{
+    font-size: 20px;
+    transition: transform 0.3s linear;
+}
+.wrapper.active .select-btn i{
+    transform: rotate(180deg);
+}
+.content{
+    display: none;
+    margin-top: 5px;
+    padding: 5px;
+    border-radius: 7px;
+    background: white;
+}
+.wrapper.active .content{
+    display: block;
+}
+.content .search{
+    position: relative;
+}
+.search i{
+    left: 15px;
+    color: darkgrey;
+    font-size: 15px;
+    line-height: 30px;
+    position: absolute;
+}
+.search input{
+    height:30px;
+    width: 100%;
+    font-size: 17px;
+    padding: 0 15px 0 43px;
+    border: 1px solid lightgray;
+}
+.content .options{
+    margin-top: 5px;
+    max-height: 100px;
+    overflow-y: auto
+}
+.options li{
+    height: 20px;
+    padding: 0 13px;
+    font-size: 13px;
+    border-radius: 5px;
+    background: white;
+}
+.options li:hover{
+    background: lightgray;
+}
+
+/*this is for the level selection*/
+.level-btn{
+    height: 40px;
+    font-size: 17px;
+    width: 120px;
+    align-items: center;
+    display: flex;
+    cursor: pointer;
+    padding: 0 10px;
+    border-radius: 7px;
+    background: whitesmoke;
+    justify-content: space-between;
+}
+.small-inp input{
+    height: 30px;
+    width: 50px;
+    border: 1px solid white;
+    text-align: center;
+}
+
+/*now ivs*/
+.tiny-inp input{
+    height: 30px;
+    width:40px;
+    border: 1px solid white;
+    text-align: center;
+}
+.iv-btn{
+    height: 40px;
+    font-size: 17px;
+    width: 350px;
+    align-items: center;
+    display: flex;
+    cursor: pointer;
+    padding: 0 10px;
+    border-radius: 7px;
+    background: whitesmoke;
+    justify-content: space-between;
+}
+
+/*evs*/
+.ev-btn{
+    height: 40px;
+    font-size: 17px;
+    width: 350px;
+    align-items: center;
+    display: flex;
+    cursor: pointer;
+    padding: 0 10px;
+    border-radius: 7px;
+    background: whitesmoke;
+    justify-content: space-between;
+}
+
+/*displaying stat values */
+.disp-btn{
+    height: 40px;
+    font-size: 17px;
+    width: 80px;
+    margin-bottom: 5px;
+    align-items: center;
+    display: flex;
+    cursor: text;
+    padding: 0 10px;
+    border-radius: 7px;
+    background: whitesmoke;
+    justify-content: space-between;
+}
+
+/*displaying types*/
+.type1-disp{
+    height: 40px;
+    font-size: 17px;
+    width: 80px;
+    margin-bottom: 5px;
+    align-items: center;
+    display: flex;
+    cursor: text;
+    padding: 0 10px;
+    border-radius: 7px;
+    background: whitesmoke;
+    justify-content: space-between;
+}
+.type2-disp{
+    height: 40px;
+    font-size: 17px;
+    width: 80px;
+    margin-bottom: 5px;
+    align-items: center;
+    display: flex;
+    cursor: text;
+    padding: 0 10px;
+    border-radius: 7px;
+    background: whitesmoke;
+    justify-content: space-between;
+}
+/*update button*/
+.update-btn{
+    height: 40px;
+    font-size: 17px;
+    width: 80px;
+    margin-bottom: 5px;
+    align-items: center;
+    display: flex;
+    cursor: text;
+    padding: 0 10px;
+    border-radius: 7px;
+    color: whitesmoke;
+    background: darkslategrey;
+    justify-content: space-between;
+}
+.update-btn:hover {
+    color: black;
+    background: lightgray;
+}

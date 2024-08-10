@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>document</title>
+    <link rel="stylesheet" href="levelD.css">
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+</head>
+<body id="body">
+    <fieldset>
+        <legend>Select Pokemon</legend>
+        <div class="wrapper">
+            <div class="select-btn">
+                <span>Bulbasaur</span>
+                <i class="uil uil-angle-down"></i>
+            </div>
+            <div class="content">
+                <div class="search">
+                    <i class="uil uil-search"></i>
+                    <input type="text" placeholder="Search">
+                </div>
+                <ul class="options" id="pokeOptions"></ul>
+            </div>
+        </div>
+        <div class="lv-wrapper">
+            <div class="level-btn">
+                <label for="level1">Level:</label>
+                <div class="small-inp">
+                    <input type="number" id="level" name="level" placeholder="Level" value="1" onchange="updatePk()">
+                </div>
+            </div>
+        </div>
+        <div class="inp-wrapper">
+            <div class="iv-btn">
+                <label for="iv1">IVs:</label>
+                <div class="tiny-inp">
+                    <input type="number" id="ivhp" name="ivhp" placeholder="HP" value="0">
+                    <input type="number" id="ivatk" name="ivatk" placeholder="ATK" value="0">
+                    <input type="number" id="ivdef" name="ivdef" placeholder="DEF" value="0">
+                    <input type="number" id="ivspa" name="ivspa" placeholder="SPA" value="0">
+                    <input type="number" id="ivspd" name="ivspd" placeholder="SPD" value="0">
+                    <input type="number" id="ivspe" name="ivspe" placeholder="SPE" value="0">
+                </div>
+            </div>
+        </div>
+        <div class="wrapper">
+            <div class="ev-btn">
+                <label for="ev1">EVs:</label>
+                <div class="tiny-inp">
+                    <input type="number" id="evhp" name="evhp" placeholder="HP" value="0" onchange="getEV('hp')">
+                    <input type="number" id="evatk" name="evatk" placeholder="ATK" value="0" onchange="getEV('atk')">
+                    <input type="number" id="evdef" name="evdef" placeholder="DEF" value="0" onchange="getEV('def')">
+                    <input type="number" id="evspa" name="evspa" placeholder="SPA" value="0" onchange="getEV('spa')">
+                    <input type="number" id="evspd" name="evspd" placeholder="SPD" value="0" onchange="getEV('spd')">
+                    <input type="number" id="evspe" name="evspe" placeholder="SPE" value="0" onchange="getEV('spe')">
+                </div>
+            </div>
+        </div>
+    </fieldset>
+    <fieldset>
+        <legend>Pokemon Data</legend>
+        <div>
+            <img src = https://assets.pokemon.com/assets/cms2/img/pokedex/full/001.png width = "400" height = "400" id = "pkimg" alt = "Bulbasaur"></img>
+        </div>
+        <div class="wrapper">
+        </div>
+        <div class="wrapper">
+            <div class="type1-disp" id = "colour1">
+                <p id="type1">Grass</p>
+            </div>
+            <div class="type2-disp" id = "colour2">
+                <p id="type2">Poison</p>
+            </div>
+            <div class="disp-btn">
+                <label>HP:</label>
+                <p id="hp">11</p>
+            </div>
+            <div class="disp-btn">
+                <label>ATK:</label>
+                <p id="atk">5</p>
+            </div>
+            <div class="disp-btn">
+                <label>DEF:</label>
+                <p id="def">5</p>
+            </div>
+            <div class="disp-btn">
+                <label>SPA:</label>
+                <p id="spa">6</p>
+            </div>
+            <div class="disp-btn">
+                <label>SPD:</label>
+                <p id="spd">6</p>
+            </div>
+            <div class="disp-btn">
+                <label>SPE:</label>
+                <p id="spe">5</p>
+            </div>
+        </div>
+    </fieldset>
+    <script src="levelD.js"></script>
+</body>
+</html>
